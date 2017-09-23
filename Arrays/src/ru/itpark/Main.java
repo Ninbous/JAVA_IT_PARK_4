@@ -19,17 +19,16 @@ public class Main {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 25
-                    == 0) {
+            if (arr[i] % 2 == 0) {
                 arr[i] = 0;
             }
             System.out.print(arr[i] + " ");
         }
-
-        for (int i = 0; i < arr.length; i++) {
+        System.out.println(" ");
+        for (int i = 0; i < arr.length/2; i++) {
             int temp = arr[i];
             arr[i] = arr[(n-1) - i];
-            
+            arr[(n-1) - i] = temp;
         }
 
         for (int i = 0; i < arr.length; i++) {
