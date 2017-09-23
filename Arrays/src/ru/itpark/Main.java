@@ -18,21 +18,23 @@ public class Main {
             arr[i] = in.nextInt();
         }
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]%25
-                    == 0){
-                arr[i]=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 25
+                    == 0) {
+                arr[i] = 0;
             }
             System.out.print(arr[i] + " ");
         }
 
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             int temp = arr[i];
+            arr[i] = arr[(n-1) - i];
             
         }
 
-        System.out.print(arr[i] + " ");
-
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
 
     }
 }
