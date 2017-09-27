@@ -29,6 +29,7 @@ public class Main {
             int temp = arr[i];
             arr[i] = arr[(n-1) - i];
             arr[(n-1) - i] = temp;
+            //Новое изменение
         }
 
         for (int i = 0; i < arr.length; i++) {
