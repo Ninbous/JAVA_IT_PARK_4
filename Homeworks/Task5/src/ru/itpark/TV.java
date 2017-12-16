@@ -40,6 +40,7 @@ public class TV {
     private void show() {
         if (turnOn) {
             System.out.println(channels.get(indOfCurrentChannel).getProgramm());
+            System.out.printf();
         }
     }
 
