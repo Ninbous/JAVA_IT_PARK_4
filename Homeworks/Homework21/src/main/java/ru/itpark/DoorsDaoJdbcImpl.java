@@ -28,7 +28,7 @@ public class DoorsDaoJdbcImpl implements DoorsDao {
             findOneByName = connection.prepareStatement("SELECT * FROM owner WHERE name=?");
             find = connection.prepareStatement("SELECT * FROM owner WHERE id=?");
             save = connection.prepareStatement("INSERT INTO owner(price, name) VALUES (?, ?)");
-            update = connection.prepareStatement("UPDATE owner SET price=?, name=?, WHERE id=?");
+            update = connection.prepareStatement("UPDATE owner SET price=?, name=? WHERE id=?");
             delete = connection.prepareStatement("DELETE FROM owner WHERE id=?");
         } catch (SQLException e) {
             e.printStackTrace();

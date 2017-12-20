@@ -1,0 +1,5 @@
+CREATE TABLE owner (
+  id IDENTITY PRIMARY KEY,
+  price INTEGER,
+  name VARCHAR(50),
+);
